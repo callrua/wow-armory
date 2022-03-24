@@ -1,6 +1,11 @@
 # wow-armory
 
-Concept: 
+### Problem:
+
+World of Warcraft (PvP) is considered a "solved" game, i.e. there is almost always an optimized way to play the game/build your character. As such, I find myself constantly checking the top players to see how they are gearing.
+I have also recently been exposed to Go development and was keen to supplement with a small project.
+
+### Concept: 
 
 I want to make use of the [World of Warcraft Game API](https://develop.battle.net/documentation/world-of-warcraft/game-data-apis) to pull info about the top X players on ladder.
 

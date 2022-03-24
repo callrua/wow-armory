@@ -2,7 +2,7 @@
 
 Concept: 
 
-I want to make use of the WoW API to pull info about the top X players on ladder.
+I want to make use of the [World of Warcraft Game API](https://develop.battle.net/documentation/world-of-warcraft/game-data-apis) to pull info about the top X players on ladder.
 
 Should be passed in a class, potentially a number and will output the following:
 

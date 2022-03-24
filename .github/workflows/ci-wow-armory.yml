@@ -1,4 +1,4 @@
-name: wow-armory CI/CD
+name: Build
 
 on: [push, pull_request]
 

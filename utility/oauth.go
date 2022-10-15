@@ -3,15 +3,18 @@ package utility
 import (
 	"context"
 	"fmt"
-	"github.com/FuzzyStatic/blizzard/v3"
 	"net/http"
+
+	"github.com/FuzzyStatic/blizzard/v3"
 )
 
-func DoAuth(clientId *string, clientSecret *string) (*blizzard.Client, context.Context){
+// DoAuth will make an authorization request to the Battle.net system,
+// expecting a Battle.net Client ID and Client Secret as input.
+func DoAuth(clientId string, clientSecret string) (*blizzard.Client, context.Context){
 	ctx := context.Background()
 	blizzClient, clientErr := blizzard.NewClient(blizzard.Config{
-		ClientID: *clientId,
-		ClientSecret: *clientSecret,
+		ClientID: clientId,
+		ClientSecret: clientSecret,
 		HTTPClient: http.DefaultClient,
 		Region:	blizzard.EU,
 		Locale: blizzard.EnGB,

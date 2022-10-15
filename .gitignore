@@ -1,5 +1,6 @@
 main
 .gitconfig
+env.sh
 
 
 .idea/*
